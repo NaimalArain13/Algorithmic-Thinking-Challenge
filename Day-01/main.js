@@ -16,8 +16,8 @@ function sumArray(num) {
     }
     return sum;
 }
-console.log(sumArray(array));
-console.log(sumArray(array1));
+console.log(sumArray(array)); //15
+console.log(sumArray(array1)); //27
 // Question 2: Reverse a String
 // Instructions:
 // Write a function named reverseString that takes a string as input.
@@ -33,6 +33,6 @@ function reverseString(input) {
     }
     console.log(reverseString.join("").trim());
 }
-// reverseString("Naimal")
-// reverseString("    How are you    ")
-// reverseString("Get Lost!   ")
+reverseString("Naimal"); //lamiaN
+reverseString("    How are you    "); //uoy era woH
+reverseString("Get Lost!   "); //!tsoL teG
