@@ -59,7 +59,7 @@ function manipulateArrays(arr1: number[], arr2: number[]) {
         for (let i = 0; i < arr1.length; i++) {
           if (arr1[i] !== arr2[i]) {
             // Make elements of both arrays the same by adding corresponding elements
-            arr2 = arr1;
+            arr2[i] = arr1[i];
           }
           // Merge the modified arrays
           merged_sum = [...arr1, ...arr2];
