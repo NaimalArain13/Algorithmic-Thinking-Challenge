@@ -57,8 +57,14 @@ class Calculator {
         }
     }
 }
-// let calculator = new Calculator(2,4,"multiply")
-// calculator
+let addition = new Calculator(2, 4, "+");
+addition;
+let multiplication = new Calculator(2, 4, "multiply");
+multiplication;
+let subtraction = new Calculator(2, 4, "sub");
+subtraction;
+let divide = new Calculator(2, 4, "division");
+divide;
 // Question 12: Separate Elements by Type
 // *Task:*
 // Given an array with mixed types of elements, separate them into different arrays based on their type (number, string, boolean).

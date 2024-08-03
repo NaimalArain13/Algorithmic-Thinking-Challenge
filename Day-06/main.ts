@@ -30,10 +30,10 @@ function division(num1: number, num2: number, operator: string) {
   if (operator === "/" || operator === "divide" || operator === "division")
     return num1 / num2;
 }
-// console.log(add(2, 4, "+")); //6
-// console.log(sub(2, 4, "-")); //-2
-// console.log(multiply(2, 4, "multiplication")); //8
-// console.log(division(2, 4, "divide")); //0.5
+console.log(add(2, 4, "+")); //6
+console.log(sub(2, 4, "-")); //-2
+console.log(multiply(2, 4, "multiplication")); //8
+console.log(division(2, 4, "divide")); //0.5
 
 // 2. *Object-Oriented Programming (OOP) Approach:*
 //    - Create a Calculator class with methods for each operation.
@@ -55,9 +55,9 @@ class Calculator {
     ) {
       console.log(this.num1 - this.num2);
     } else if (
-    operator === "*" ||
-    operator === "multiply" ||
-    operator === "multiplication"
+      operator === "*" ||
+      operator === "multiply" ||
+      operator === "multiplication"
     ) {
       console.log(this.num1 * this.num2);
     } else if (
@@ -69,29 +69,33 @@ class Calculator {
     }
   }
 }
-// let calculator = new Calculator(2,4,"multiply")
-// calculator
+let addition = new Calculator(2, 4, "+");
+addition;
+let multiplication = new Calculator(2, 4, "multiply");
+multiplication;
+let subtraction = new Calculator(2, 4, "sub");
+subtraction;
+let divide = new Calculator(2, 4, "division");
+divide;
 
 // Question 12: Separate Elements by Type
 
 // *Task:*
 // Given an array with mixed types of elements, separate them into different arrays based on their type (number, string, boolean).
-function seperateType(array:(string|number|boolean)[]){
-  let stringArray:string[] = []
-  let numberArray:number[] = []
-  let booleanArray:boolean[] =[]
-  for(let i=0;i<array.length;i++){
-    if(typeof array[i] === "string"){
-      stringArray.push(<string>array[i])
-    }else if(typeof array[i] === "number"){
-      numberArray.push(<number>array[i])
-    }else {
-     booleanArray.push(<boolean>array[i])
+function seperateType(array: (string | number | boolean)[]) {
+  let stringArray: string[] = [];
+  let numberArray: number[] = [];
+  let booleanArray: boolean[] = [];
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === "string") {
+      stringArray.push(<string>array[i]);
+    } else if (typeof array[i] === "number") {
+      numberArray.push(<number>array[i]);
+    } else {
+      booleanArray.push(<boolean>array[i]);
     }
   }
-  return [stringArray , numberArray , booleanArray]
+  return [stringArray, numberArray, booleanArray];
 }
-let mixedArray = ["apple" , 23 , true , "banana" , 24 , false]
-console.log(seperateType(mixedArray))
-
-
+let mixedArray = ["apple", 23, true, "banana", 24, false];
+console.log(seperateType(mixedArray));
