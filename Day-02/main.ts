@@ -48,3 +48,4 @@ function largestNum(array:number[]):number{
 console.log(largestNum([3,5,6,-78,8,9,0]))  //9
 console.log(largestNum([3,6,-9,+6]));  //6 
 console.log(largestNum([9]));  //9
+console.log(largestNum([]));
