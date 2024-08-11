@@ -83,9 +83,10 @@ function findSum(arr1:number[],arr2:number[]):number{
 // 4. *Step 4: Test with Various Strings*
 //    - Test the function with both palindromes and non-palindromes to verify that it works as expected.
 function isPalindrome(str:string):boolean{
+     let lowerStr = str.toLowerCase()
     let pointer1 = 0
-    let pointer2 = str.length-1
-    while(str[pointer1] === str[pointer2]){
+    let pointer2 = lowerStr.length-1
+    while(lowerStr[pointer1] === lowerStr[pointer2]){
         pointer1++
         pointer2++
         return true
@@ -97,3 +98,4 @@ console.log(isPalindrome("madam")); //true
 console.log(isPalindrome("hello")); //false
 console.log(isPalindrome("love"));  //false
 console.log(isPalindrome("level")); //true
+console.log(isPalindrome("Madam")); //true
