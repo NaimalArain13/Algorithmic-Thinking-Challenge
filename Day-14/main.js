@@ -80,4 +80,4 @@ console.log(isPalindrome("madam")); //true
 console.log(isPalindrome("hello")); //false
 console.log(isPalindrome("love")); //false
 console.log(isPalindrome("level")); //true
-console.log(isPalindrome("Madam"));
+console.log(isPalindrome("Madam")); //true

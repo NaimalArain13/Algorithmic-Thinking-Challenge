@@ -97,5 +97,4 @@ function firstNonRepeatedCharacter(s) {
     return "";
 }
 const s = "Naimal";
-console.log(firstNonRepeatedCharacter(s));
-// Expected output: "N"
+console.log(firstNonRepeatedCharacter(s)); //N

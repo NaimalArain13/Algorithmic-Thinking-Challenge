@@ -45,4 +45,4 @@ function findLongest(sentence) {
     return pointer1;
 }
 console.log(findLongest("The quick brown fox jumps over the lazy dog")); //quick
-console.log(findLongest("I love coding in TypeScript")); //quick
+console.log(findLongest("I love coding in TypeScript")); //typeScript

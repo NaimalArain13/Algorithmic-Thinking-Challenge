@@ -27,10 +27,7 @@ function returnFirstNdLast(array) {
 // This solution avoids using built-in methods like Math.max and demonstrates basic iteration and comparison logic.
 function largestNum(array) {
     let largestNum = array[0];
-    if (array.length === 0) {
-        throw new Error("Array must have atleast one element");
-    }
-    else if (array.length === 1) {
+    if (array.length === 1) {
         return largestNum;
     }
     for (let i = 0; i < largestNum; i++) {

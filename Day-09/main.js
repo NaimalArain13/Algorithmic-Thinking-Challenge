@@ -87,7 +87,7 @@ class Queue {
 const queue = new Queue();
 queue.enqueue("a");
 queue.enqueue("b");
-console.log(queue);
+console.log(queue); //Queue { queue: [ 'a', 'b' ] }
 console.log(queue.peek()); // Output: "a"
 console.log(queue.dequeue()); // Output: "a"
 console.log(queue.dequeue()); // Output: "b"

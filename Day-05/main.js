@@ -31,34 +31,48 @@ function manipulateArrays(arr1, arr2) {
     let merged_sum = [];
     let merged_multiplied = [];
     let merged_middle = [];
+    //Condtion 1: // Check if the lengths of both arrays are the same
     if (arr1.length === arr2.length) {
         for (let i = 0; i < arr1.length; i++) {
             let multiplied = 1;
+            //if elements of both array are also same
             if (arr1[i] === arr2[i]) {
+                // Merge both arrays into one
                 merged_multiplied = [...arr1, ...arr2];
                 for (let j = 0; j < merged_multiplied.length; j++) {
+                    // Multiply all elements of the merged array
                     multiplied *= merged_multiplied[j];
                 }
+                //return Product
                 return multiplied;
-            }
+            } // Condition 03: *If the lengths of both arrays are the same but elements are different:*
             else if (arr1.length === arr2.length) {
                 let sum = 0;
                 for (let i = 0; i < arr1.length; i++) {
                     if (arr1[i] !== arr2[i]) {
-                        arr2 = arr1;
+                        // Make elements of both arrays the same by adding corresponding elements
+                        arr2[i] = arr1[i];
                     }
+                    // Merge the modified arrays
                     merged_sum = [...arr1, ...arr2];
                 }
+                // Sum all elements of the merged array
                 for (let j = 0; j < merged_sum.length; j++) {
                     sum += merged_sum[j];
                 }
+                // Return the sum
                 return sum;
             }
         }
+        //Condition 2: *If the lengths of both arrays are different:*
     }
     else if (arr1 !== arr2) {
+        // If the lengths of the arrays are different
+        // Merge both arrays into one
         merged_middle = [...arr1, ...arr2];
+        // Calculate the middle index
         let length_merged = Math.floor(merged_middle.length / 2);
+        // Return the middle element
         return merged_middle[length_merged];
     }
 }
@@ -79,13 +93,18 @@ console.log(manipulateArrays([1, 2], [3, 4]));
 // // extractFirstLetters(["Alice", "Bob", "Charlie", "David", "Eve"]) should output ["A", "B", "C", "D", "E"]
 function extractFirstLetters(names) {
     let firstLetter = [];
+    //Loop through the string array to get element
     for (let i = 0; i < names.length; i++) {
+        //Nested loop through each element to get the first letter of each element
         for (let j = 0; j < names[i].length; j++) {
+            //check if j is equal to 0
             if (j == 0) {
+                //add the first letter to the "firstLetter" array.
                 firstLetter.push(names[i][j]);
             }
         }
     }
+    //return "firstLetter" array
     return firstLetter;
 }
 // console.log(extractFirstLetters(["Alice", "Bob", "Charlie", "David", "Eve"]));

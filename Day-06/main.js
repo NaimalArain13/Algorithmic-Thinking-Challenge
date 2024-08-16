@@ -25,10 +25,10 @@ function division(num1, num2, operator) {
     if (operator === "/" || operator === "divide" || operator === "division")
         return num1 / num2;
 }
-// console.log(add(2, 4, "+")); //6
-// console.log(sub(2, 4, "-")); //-2
-// console.log(multiply(2, 4, "multiplication")); //8
-// console.log(division(2, 4, "divide")); //0.5
+console.log(add(2, 4, "+")); //6
+console.log(sub(2, 4, "-")); //-2
+console.log(multiply(2, 4, "multiplication")); //8
+console.log(division(2, 4, "divide")); //0.5
 // 2. *Object-Oriented Programming (OOP) Approach:*
 //    - Create a Calculator class with methods for each operation.
 //    - Implement a method calculate in the class that takes two numbers and an operation (as a string) and returns the result of the operation.

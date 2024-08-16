@@ -39,7 +39,7 @@ function generatedTableOfOdds(number) {
     }
     return tableArray;
 }
-// console.log(generatedTableOfOdds([2, 3, 5, 8, 11]))  //table of 19
+console.log(generatedTableOfOdds([2, 3, 5, 8, 11])); //table of 19
 // ### Question: 2 *Filter and Square Even Numbers*
 // Write a function that takes an array of numbers as input. The function should filter out all the even numbers from the array, square each of those even numbers, and return a new array containing these squared values.
 // *Function Signature:*
@@ -71,4 +71,4 @@ function generatedSquareOfEven(number) {
     }
     return squareArray;
 }
-console.log(generatedSquareOfEven([1, 2, 3, 4, 5]));
+console.log(generatedSquareOfEven([1, 2, 3, 4, 5])); //4,16

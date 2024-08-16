@@ -62,7 +62,7 @@ function findMissingNumber(arr) {
     for (let i = 0; i < arr.length; i++) {
         actualSum += arr[i];
     }
-    return [expectedSum, actualSum];
+    return expectedSum - actualSum;
 }
-console.log(findMissingNumber([1, 2, 4, 5]));
-console.log(findMissingNumber([3, 7, 1, 2, 8, 4, 5]));
+console.log(findMissingNumber([1, 2, 4, 5])); //3
+console.log(findMissingNumber([3, 7, 1, 2, 8, 4, 5])); //6

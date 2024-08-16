@@ -25,8 +25,8 @@ function removeDuplicatesInPlace(arr) {
 }
 const arr = [1, 1, 2, 2, 3, 4, 4, 5];
 const length1 = removeDuplicatesInPlace(arr);
-console.log(length1);
-console.log(arr.slice(0, length1));
+console.log(length1); //5
+console.log(arr.slice(0, length1)); //[ 1, 2, 3, 4, 5 ]
 // ### Question 2: Move Zeroes
 // *Problem:*
 // You are given an array that contains some zero elements. Your task is to move all the zeroes to the end of the array, while keeping the relative order of the non-zero elements unchanged.

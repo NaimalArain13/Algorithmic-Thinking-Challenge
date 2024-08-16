@@ -35,6 +35,15 @@ class Book {
         return this.author.toLowerCase() === authorName.toLowerCase();
     }
 }
+function returnPersonData(data, targetCity) {
+    for (const person of data) {
+        for (const address of person.addresses) {
+            if (address.city.toLowerCase() === targetCity.toLowerCase())
+                return { name: person.name, email: person.email };
+        }
+    }
+    return undefined;
+}
 const person1 = [
     {
         name: "sara",
@@ -67,14 +76,5 @@ const person1 = [
         ],
     },
 ];
-function returnPersonData(data, targetCity) {
-    for (const person of data) {
-        for (const address of person.addresses) {
-            if (address.city.toLowerCase() === targetCity.toLowerCase())
-                return { name: person.name, email: person.email };
-        }
-    }
-    return undefined;
-}
 console.log(returnPersonData(person1, "Lahore"));
 console.log(returnPersonData(person1, "Hyderabad"));
